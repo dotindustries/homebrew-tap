@@ -5,21 +5,21 @@
 class Vx < Formula
   desc "Vault-backed secret manager for monorepos"
   homepage "https://github.com/dotindustries/vx"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dotindustries/vx/releases/download/v0.0.1/vx_0.0.1_darwin_amd64.tar.gz"
-      sha256 "558523bec3518bdba627a27c77d415b5db524330f3ff72f6d06b81844d376cf4"
+      url "https://github.com/dotindustries/vx/releases/download/v0.0.2/vx_0.0.2_darwin_amd64.tar.gz"
+      sha256 "999867bc3e574a4418823b80935fa78e43cc232d91c52edb349865ef8cac74b5"
 
       def install
         bin.install "vx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dotindustries/vx/releases/download/v0.0.1/vx_0.0.1_darwin_arm64.tar.gz"
-      sha256 "02c6310e596ffac686b49a5f2336558afbdfc908bb6be6572e7be7b9ba0f489d"
+      url "https://github.com/dotindustries/vx/releases/download/v0.0.2/vx_0.0.2_darwin_arm64.tar.gz"
+      sha256 "958aeafc38128d994e07204e8f151980b2aba93aa6f49aee028ef8a462511c79"
 
       def install
         bin.install "vx"
@@ -29,15 +29,15 @@ class Vx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dotindustries/vx/releases/download/v0.0.1/vx_0.0.1_linux_amd64.tar.gz"
-      sha256 "5278eaeef03ec8d0859fd73ce1e2de729db7779efe06c6ce299620d38dcc3468"
+      url "https://github.com/dotindustries/vx/releases/download/v0.0.2/vx_0.0.2_linux_amd64.tar.gz"
+      sha256 "671a9aa870bce82453715e0df2182b906b4425edba57e5274346e7b8f7357576"
       def install
         bin.install "vx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dotindustries/vx/releases/download/v0.0.1/vx_0.0.1_linux_arm64.tar.gz"
-      sha256 "8d865448ca27c35365f139cfd08e3f0df7614cab7136f474cf73c5974de3c2e8"
+      url "https://github.com/dotindustries/vx/releases/download/v0.0.2/vx_0.0.2_linux_arm64.tar.gz"
+      sha256 "d03a6fcadb80421b2434a4873296ec88fb9f44e67c36905ced5b472b8a99e7a8"
       def install
         bin.install "vx"
       end
